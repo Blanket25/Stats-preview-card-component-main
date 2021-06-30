@@ -1,0 +1,130 @@
+/**General**/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+div.card-container {
+  text-align: center;
+}
+
+/*Text*/
+
+h1,
+div.stats span {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+div.content h1 > span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+div.content > p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+  padding-top: 2rem;
+  padding-bottom: 2.7rem;
+}
+
+div.stats p {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 0.6rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+
+div.stats span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/**Image**/
+
+div.img-container {
+  align-items: stretch;
+  display: flex;
+  background-color: hsla(277, 64%, 61%);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+img {
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  width: 100%;
+}
+
+/**Content**/
+
+div.content {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 2rem;
+}
+
+/*Stats*/
+
+div.stats p:last-child {
+  padding-bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1200px) {
+  div.card-container {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1000px;
+  }
+
+  div.img-container,
+  div.content {
+    width: 50%;
+  }
+
+  div.img-container {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+
+  div.content {
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding: 4rem;
+    text-align: left;
+  }
+
+  div.stats {
+    display: flex;
+    justify-content: space-between;
+  }
+}
